@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduRepaso Offline</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <div class="logo-icon">
+        <span>K'</span>
+      </div>
+      <div>
+        <h1>K'inLab</h1>
+        <small>Offline</small>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#beneficios">Beneficios</a>
+      <a>|</a>
+      <a href="#funciona">Cómo funciona</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <span class="tag">Educación accesible</span>
+        <h2>Repasa tus clases sin necesidad de internet</h2>
+        <p>
+          EduRepaso Offline es una aplicación educativa pensada para estudiantes
+          que necesitan estudiar desde cualquier lugar, aunque no tengan conexión.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="app.html" class="btn-primary">Probar la app</a>
+          <a href="#beneficios" class="btn-secondary">Ver beneficios</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="phone-preview">
+          <div class="phone-header"></div>
+          <h3>Temas disponibles</h3>
+          <div class="mini-card">Matemática básica</div>
+          <div class="mini-card">Comunicación</div>
+          <div class="mini-card">Ciencias naturales</div>
+          <div class="mini-card active">Tecnología</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="beneficios" class="section">
+      <h2>Beneficios principales</h2>
+      <p class="section-description">
+        La app busca apoyar a estudiantes con recursos limitados, brindando contenido fácil de consultar.
+      </p>
+
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-icon">📚</div>
+          <h3>Contenido organizado</h3>
+          <p>Los temas se presentan por áreas para que el estudiante encuentre rápido lo que necesita.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">📶</div>
+          <h3>Sin internet</h3>
+          <p>El contenido puede guardarse en el dispositivo y usarse sin conexión.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">📝</div>
+          <h3>Notas personales</h3>
+          <p>El estudiante puede escribir apuntes importantes y guardarlos en el navegador.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">✅</div>
+          <h3>Mini evaluaciones</h3>
+          <p>Incluye preguntas cortas para comprobar si el estudiante comprendió el tema.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="funciona" class="section steps-section">
+      <h2>¿Cómo funciona?</h2>
+
+      <div class="steps">
+        <div class="step">
+          <span>1</span>
+          <h3>Selecciona un tema</h3>
+          <p>El estudiante elige el área que desea repasar.</p>
+        </div>
+
+        <div class="step">
+          <span>2</span>
+          <h3>Lee el contenido</h3>
+          <p>La información se muestra de forma clara y resumida.</p>
+        </div>
+
+        <div class="step">
+          <span>3</span>
+          <h3>Responde preguntas</h3>
+          <p>Puede practicar con preguntas rápidas.</p>
+        </div>
+
+        <div class="step">
+          <span>4</span>
+          <h3>Guarda notas</h3>
+          <p>Sus apuntes quedan guardados en el navegador.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Empieza a repasar ahora</h2>
+      <p>Una herramienta sencilla, útil y accesible para apoyar el aprendizaje.</p>
+      <a href="app.html" class="btn-primary">Abrir EduRepaso</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>EduRepaso Offline © 2026 - Proyecto educativo</p>
+  </footer>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js");
+    }
+  </script>
+
+</body>
+</html>

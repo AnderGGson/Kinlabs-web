@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>App - EduRepaso Offline</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <div class="logo-icon">
+        <span>ER</span>
+      </div>
+      <div>
+        <h1>EduRepaso</h1>
+        <small>App Offline</small>
+      </div>
+    </div>
+
+    <nav>
+      <a href="index.html">Inicio</a>
+    </nav>
+  </header>
+
+  <main class="app-layout">
+    <aside class="sidebar">
+      <h2>Temas</h2>
+      <p>Selecciona un contenido para repasar.</p>
+
+      <div id="topicList" class="topic-list"></div>
+    </aside>
+
+    <section class="content-panel">
+      <div class="content-header">
+        <span class="tag">Modo repaso</span>
+        <h2 id="topicTitle">Selecciona un tema</h2>
+      </div>
+
+      <article class="lesson-box">
+        <p id="topicContent">
+          Elige un tema del menú para ver el contenido de estudio.
+        </p>
+      </article>
+
+      <section class="quiz-box">
+        <h3>Pregunta de repaso</h3>
+        <p id="questionText">Aquí aparecerá una pregunta del tema seleccionado.</p>
+
+        <div id="answers" class="answers"></div>
+
+        <p id="result" class="result"></p>
+      </section>
+
+      <section class="notes-box">
+        <h3>Mis notas</h3>
+        <textarea id="notes" placeholder="Escribe tus apuntes aquí..."></textarea>
+        <button id="saveNotes" class="btn-primary">Guardar notas</button>
+        <p id="notesMessage" class="notes-message"></p>
+      </section>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js");
+    }
+  </script>
+
+</body>
+</html>
