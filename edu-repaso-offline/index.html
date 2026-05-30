@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EduRepaso Offline</title>
+  <title>K'inLab</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -21,23 +21,55 @@
 
     <nav>
       <a href="#beneficios">Beneficios</a>
-      <a>|</a>
-      <a href="#funciona">Cómo funciona</a>
+      <span>|</span>
+      <a href="#como-funciona">Cómo funciona</a>
     </nav>
   </header>
 
   <main>
     <section class="hero">
       <div class="hero-text">
-        <span class="tag">Educación accesible</span>
-        <h2>Repasa tus clases sin necesidad de internet</h2>
-        <p>
-          EduRepaso Offline es una aplicación educativa pensada para estudiantes
-          que necesitan estudiar desde cualquier lugar, aunque no tengan conexión.
+        <span class="tag">Educación accesible sin internet</span>
+
+        <h2>Repaso offline para estudiantes</h2>
+
+        <p class="hero-description">
+          K'inLab es una aplicación educativa diseñada para apoyar a estudiantes que no cuentan
+          con internet en casa o que tienen una conexión limitada, permitiéndoles repasar sus
+          contenidos desde cualquier lugar mediante su dispositivo móvil.
+        </p>
+
+        <div class="hero-features">
+          <div class="hero-feature">
+            <span>📲</span>
+            <p>
+              Descarga de contenido académico desde un servidor local en la escuela.
+            </p>
+          </div>
+
+          <div class="hero-feature">
+            <span>📚</span>
+            <p>
+              Acceso a resúmenes, lecturas, cuestionarios, prácticas y actividades de repaso.
+            </p>
+          </div>
+
+          <div class="hero-feature">
+            <span>🌐</span>
+            <p>
+              Repaso desde casa sin depender de una conexión a internet.
+            </p>
+          </div>
+        </div>
+
+        <p class="hero-extra">
+          Al inicio de cada bimestre, los estudiantes podrán transferir a sus dispositivos móviles
+          los materiales correspondientes, fortaleciendo su aprendizaje de forma accesible,
+          práctica e inclusiva.
         </p>
 
         <div class="hero-buttons">
-          <a href="app.html" class="btn-primary">Probar la app</a>
+          <a href="app.html" class="btn-primary">Ver la demo</a>
           <a href="#beneficios" class="btn-secondary">Ver beneficios</a>
         </div>
       </div>
@@ -45,87 +77,171 @@
       <div class="hero-card">
         <div class="phone-preview">
           <div class="phone-header"></div>
-          <h3>Temas disponibles</h3>
-          <div class="mini-card">Matemática básica</div>
-          <div class="mini-card">Comunicación</div>
-          <div class="mini-card">Ciencias naturales</div>
-          <div class="mini-card active">Tecnología</div>
+
+          <div class="app-status">
+            <span class="status-dot"></span>
+            <p>Modo offline activo</p>
+          </div>
+
+          <h3>Contenido disponible</h3>
+
+          <div class="mini-card">
+            <span>📘</span>
+            Matemática básica
+          </div>
+
+          <div class="mini-card">
+            <span>🗣️</span>
+            Comunicación
+          </div>
+
+          <div class="mini-card">
+            <span>🔬</span>
+            Ciencias naturales
+          </div>
+
+          <div class="mini-card active">
+            <span>💻</span>
+            Tecnología
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="beneficios" class="section">
-      <h2>Beneficios principales</h2>
-      <p class="section-description">
-        La app busca apoyar a estudiantes con recursos limitados, brindando contenido fácil de consultar.
-      </p>
+    <section id="beneficios" class="benefits-section">
+      <div class="section-header">
+        <h2>Beneficios principales</h2>
+        <p>
+          K'inLab permite que los estudiantes continúen reforzando sus conocimientos desde casa,
+          usando contenido previamente descargado en sus dispositivos móviles.
+        </p>
+      </div>
 
-      <div class="cards-grid">
-        <article class="card">
-          <div class="card-icon">📚</div>
-          <h3>Contenido organizado</h3>
-          <p>Los temas se presentan por áreas para que el estudiante encuentre rápido lo que necesita.</p>
+      <div class="benefits-grid">
+        <article class="benefit-card">
+          <div class="benefit-icon">📶</div>
+          <h3>Aprendizaje sin internet</h3>
+          <p>
+            Los estudiantes pueden repasar sus contenidos sin depender de una conexión estable
+            o de datos móviles.
+          </p>
         </article>
 
-        <article class="card">
-          <div class="card-icon">📶</div>
-          <h3>Sin internet</h3>
-          <p>El contenido puede guardarse en el dispositivo y usarse sin conexión.</p>
+        <article class="benefit-card">
+          <div class="benefit-icon">📲</div>
+          <h3>Contenido descargable</h3>
+          <p>
+            Al inicio de cada bimestre, el material puede transferirse desde un servidor local
+            de la escuela al dispositivo del estudiante.
+          </p>
         </article>
 
-        <article class="card">
-          <div class="card-icon">📝</div>
-          <h3>Notas personales</h3>
-          <p>El estudiante puede escribir apuntes importantes y guardarlos en el navegador.</p>
+        <article class="benefit-card">
+          <div class="benefit-icon">📚</div>
+          <h3>Recursos educativos variados</h3>
+          <p>
+            La aplicación puede incluir resúmenes, lecturas, cuestionarios, prácticas y
+            actividades de reforzamiento.
+          </p>
         </article>
 
-        <article class="card">
-          <div class="card-icon">✅</div>
-          <h3>Mini evaluaciones</h3>
-          <p>Incluye preguntas cortas para comprobar si el estudiante comprendió el tema.</p>
+        <article class="benefit-card">
+          <div class="benefit-icon">🏠</div>
+          <h3>Repaso desde casa</h3>
+          <p>
+            El estudiante puede continuar aprendiendo desde su hogar o cualquier lugar,
+            utilizando únicamente su dispositivo móvil.
+          </p>
+        </article>
+
+        <article class="benefit-card">
+          <div class="benefit-icon">🌱</div>
+          <h3>Inclusión educativa</h3>
+          <p>
+            K'inLab ayuda a reducir la brecha digital, brindando una alternativa accesible
+            para estudiantes con recursos limitados.
+          </p>
+        </article>
+
+        <article class="benefit-card">
+          <div class="benefit-icon">✅</div>
+          <h3>Refuerzo del aprendizaje</h3>
+          <p>
+            Los cuestionarios y prácticas permiten que el estudiante evalúe su comprensión
+            y repase los temas vistos en clase.
+          </p>
         </article>
       </div>
     </section>
 
-    <section id="funciona" class="section steps-section">
-      <h2>¿Cómo funciona?</h2>
-
-      <div class="steps">
-        <div class="step">
-          <span>1</span>
-          <h3>Selecciona un tema</h3>
-          <p>El estudiante elige el área que desea repasar.</p>
-        </div>
-
-        <div class="step">
-          <span>2</span>
-          <h3>Lee el contenido</h3>
-          <p>La información se muestra de forma clara y resumida.</p>
-        </div>
-
-        <div class="step">
-          <span>3</span>
-          <h3>Responde preguntas</h3>
-          <p>Puede practicar con preguntas rápidas.</p>
-        </div>
-
-        <div class="step">
-          <span>4</span>
-          <h3>Guarda notas</h3>
-          <p>Sus apuntes quedan guardados en el navegador.</p>
-        </div>
+    <section id="como-funciona" class="how-section">
+      <div class="section-header">
+        <h2>Cómo funciona</h2>
+        <p>
+          K'inLab permite que el contenido educativo sea transferido desde la escuela
+          hacia el dispositivo móvil del estudiante, para que pueda repasar en casa
+          sin necesidad de internet.
+        </p>
       </div>
-    </section>
 
-    <section class="cta">
-      <h2>Empieza a repasar ahora</h2>
-      <p>Una herramienta sencilla, útil y accesible para apoyar el aprendizaje.</p>
-      <a href="app.html" class="btn-primary">Abrir EduRepaso</a>
+      <div class="how-container">
+        <article class="how-step">
+          <div class="step-number">01</div>
+          <div class="step-icon">🏫</div>
+          <h3>Servidor local en la escuela</h3>
+          <p>
+            La institución educativa almacena los contenidos del bimestre en un servidor
+            local, como lecturas, resúmenes, prácticas y cuestionarios.
+          </p>
+        </article>
+
+        <article class="how-step">
+          <div class="step-number">02</div>
+          <div class="step-icon">📲</div>
+          <h3>Transferencia al dispositivo</h3>
+          <p>
+            Al inicio de cada bimestre, los estudiantes conectan o sincronizan su dispositivo
+            móvil para descargar el material académico correspondiente.
+          </p>
+        </article>
+
+        <article class="how-step">
+          <div class="step-number">03</div>
+          <div class="step-icon">📚</div>
+          <h3>Contenido disponible offline</h3>
+          <p>
+            Una vez descargado, el contenido queda guardado en el dispositivo y puede
+            consultarse desde casa o cualquier lugar sin conexión a internet.
+          </p>
+        </article>
+
+        <article class="how-step">
+          <div class="step-number">04</div>
+          <div class="step-icon">✅</div>
+          <h3>Repaso y autoevaluación</h3>
+          <p>
+            El estudiante puede estudiar los temas, realizar prácticas, responder cuestionarios
+            y reforzar sus conocimientos de forma autónoma.
+          </p>
+        </article>
+      </div>
+
+      <div class="how-highlight">
+        <div>
+          <span>✨</span>
+          <h3>Aprendizaje accesible durante todo el bimestre</h3>
+        </div>
+        <p>
+          Con este modelo, K'inLab convierte el dispositivo móvil en una herramienta educativa
+          funcional, permitiendo que los estudiantes continúen aprendiendo aunque no cuenten
+          con internet en sus hogares.
+        </p>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>EduRepaso Offline © 2026 - Proyecto educativo</p>
+    <p>K'inLab © 2026 - Proyecto educativo</p>
   </footer>
 
   <script>

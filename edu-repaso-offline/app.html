@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>App - EduRepaso Offline</title>
+  <title>Demo App - K'inLab</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -11,64 +11,102 @@
   <header class="navbar">
     <div class="logo">
       <div class="logo-icon">
-        <span>ER</span>
+        <span>K'</span>
       </div>
       <div>
-        <h1>EduRepaso</h1>
-        <small>App Offline</small>
+        <h1>K'inLab</h1>
+        <small>Offline</small>
       </div>
     </div>
 
     <nav>
       <a href="index.html">Inicio</a>
+      <a href="#demo">Demo</a>
     </nav>
   </header>
 
-  <main class="app-layout">
-    <aside class="sidebar">
-      <h2>Temas</h2>
-      <p>Selecciona un contenido para repasar.</p>
+  <main>
+    <section class="demo-hero">
+      <div class="demo-hero-text">
+        <span class="tag">Vista previa de la aplicación</span>
+        <h2>Conoce cómo se vería K’inLab en un dispositivo móvil</h2>
+        <p>
+          Esta demostración visual presenta algunas de las pantallas principales
+          de la aplicación, mostrando cómo los estudiantes podrían acceder a sus
+          contenidos educativos sin necesidad de conexión a internet.
+        </p>
+      </div>
+    </section>
 
-      <div id="topicList" class="topic-list"></div>
-    </aside>
-
-    <section class="content-panel">
-      <div class="content-header">
-        <span class="tag">Modo repaso</span>
-        <h2 id="topicTitle">Selecciona un tema</h2>
+    <section id="demo" class="demo-gallery-section">
+      <div class="section-header">
+        <span class="tag">Pantallas de demostración</span>
+        <h2>Explora la experiencia de uso</h2>
+        <p>
+          K’inLab está diseñada para ofrecer una experiencia sencilla, clara e intuitiva
+          para estudiantes que necesiten repasar sus contenidos desde casa.
+        </p>
       </div>
 
-      <article class="lesson-box">
-        <p id="topicContent">
-          Elige un tema del menú para ver el contenido de estudio.
+      <div class="demo-gallery">
+        <article class="demo-card">
+          <div class="phone-frame">
+            <img src="img/demo-1.png" alt="Pantalla de inicio de K'inLab" />
+          </div>
+          <h3>Pantalla de inicio</h3>
+          <p>
+            Vista principal de la app con acceso rápido a contenidos y secciones educativas.
+          </p>
+        </article>
+
+        <article class="demo-card">
+          <div class="phone-frame">
+            <img src="img/demo-2.png" alt="Pantalla de materias de K'inLab" />
+          </div>
+          <h3>Materias disponibles</h3>
+          <p>
+            El estudiante puede visualizar las materias o temas descargados en su dispositivo.
+          </p>
+        </article>
+
+        <article class="demo-card">
+          <div class="phone-frame">
+            <img src="img/demo-3.png" alt="Pantalla de contenido educativo de K'inLab" />
+          </div>
+          <h3>Contenido de estudio</h3>
+          <p>
+            Acceso a resúmenes, lecturas y explicaciones para reforzar el aprendizaje.
+          </p>
+        </article>
+
+        <article class="demo-card">
+          <div class="phone-frame">
+            <img src="img/demo-4.png" alt="Pantalla de cuestionarios de K'inLab" />
+          </div>
+          <h3>Cuestionarios y práctica</h3>
+          <p>
+            Sección pensada para que el estudiante pueda autoevaluar sus conocimientos.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="demo-extra">
+      <div class="demo-extra-box">
+        <h2>Una experiencia accesible y pensada para el aprendizaje offline</h2>
+        <p>
+          K’inLab busca ofrecer una herramienta visualmente amigable, intuitiva y funcional,
+          permitiendo a los estudiantes interactuar con materiales de estudio descargados
+          previamente desde su centro educativo.
         </p>
-      </article>
-
-      <section class="quiz-box">
-        <h3>Pregunta de repaso</h3>
-        <p id="questionText">Aquí aparecerá una pregunta del tema seleccionado.</p>
-
-        <div id="answers" class="answers"></div>
-
-        <p id="result" class="result"></p>
-      </section>
-
-      <section class="notes-box">
-        <h3>Mis notas</h3>
-        <textarea id="notes" placeholder="Escribe tus apuntes aquí..."></textarea>
-        <button id="saveNotes" class="btn-primary">Guardar notas</button>
-        <p id="notesMessage" class="notes-message"></p>
-      </section>
+        <a href="index.html" class="btn-primary">Volver al inicio</a>
+      </div>
     </section>
   </main>
 
-  <script src="app.js"></script>
-
-  <script>
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("sw.js");
-    }
-  </script>
+  <footer class="footer">
+    <p>K’inLab © 2026 - Demo visual de aplicación educativa offline</p>
+  </footer>
 
 </body>
 </html>
